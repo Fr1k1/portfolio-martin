@@ -1,6 +1,7 @@
 import "./App.scss";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
+import Projects from "./Components/Projects/Projects";
 
 function App() {
   return (
@@ -8,8 +9,8 @@ function App() {
       <Header />
       <Hero />
 
-      <div>
-        <h2>Neki tekst</h2>
+      <div className="content-wrapper">
+        <Projects />
       </div>
     </>
   );

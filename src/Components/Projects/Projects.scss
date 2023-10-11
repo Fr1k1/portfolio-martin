@@ -1,0 +1,29 @@
+.projects-parent-wrapper {
+  //background-color: red;
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.projects-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    line-height: 47px;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: "Jost", sans-serif;
+  }
+
+  h5 {
+    font-family: "Jost", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}
