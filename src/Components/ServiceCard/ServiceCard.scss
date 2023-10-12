@@ -1,0 +1,28 @@
+.service-card-wrapper {
+  border-radius: 8px;
+  background-color: rgba(242, 242, 242, 1);
+  padding: 16px;
+  text-align: justify;
+  line-height: 30px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-icon-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 47px;
+    font-family: "Jost", sans-serif;
+  }
+}
+
+.service-icon {
+  border-radius: 8px;
+  display: flex;
+  padding: 6px;
+  background-color: rgba(255, 198, 198, 1);
+}

@@ -10,6 +10,8 @@ import Kotlin from "./assets/kotlin.png";
 import Flutter from "./assets/flutter.png";
 import Typescript from "./assets/typescript.png";
 import Javascript from "./assets/javascript.png";
+import Node from "./assets/node.png";
+import Sass from "./assets/sass.png";
 
 export const technologies = [
   {
@@ -34,22 +36,22 @@ export const technologies = [
 
   {
     id: 5,
-    logo: Docker,
+    logo: Typescript,
   },
 
   {
     id: 6,
-    logo: Laravel,
+    logo: Javascript,
   },
 
   {
     id: 7,
-    logo: Csharp,
+    logo: Node,
   },
 
   {
     id: 8,
-    logo: Cpp,
+    logo: Sass,
   },
 
   {
@@ -64,11 +66,21 @@ export const technologies = [
 
   {
     id: 11,
-    logo: Typescript,
+    logo: Docker,
   },
 
   {
     id: 12,
-    logo: Javascript,
+    logo: Laravel,
+  },
+
+  {
+    id: 13,
+    logo: Csharp,
+  },
+
+  {
+    id: 14,
+    logo: Cpp,
   },
 ];

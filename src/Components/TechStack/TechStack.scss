@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 48px;
 
   h4 {
     line-height: 47px;
@@ -19,8 +20,11 @@
 }
 
 .techstack-wrapper {
-  display: flex;
+  display: grid;
   gap: 24px;
   width: 100%;
+  grid-template-columns: repeat(8, 1fr);
   justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 120px;
 }

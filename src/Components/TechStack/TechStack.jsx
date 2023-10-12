@@ -7,7 +7,6 @@ const TechStack = () => {
     <div className="techstack-parent-wrapper">
       <div className="techstack-text-wrapper">
         <h4>TECHSTACK</h4>
-        <h5>+ more</h5>
       </div>
 
       <div className="techstack-wrapper">
