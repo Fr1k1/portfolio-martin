@@ -1,0 +1,50 @@
+.contact-wrapper {
+  margin-bottom: 120px;
+}
+
+.contact-content-wrapper {
+  background-color: rgb(242, 242, 242);
+  box-shadow: 0 0 5px red;
+  display: flex;
+  gap: 80px;
+  border-radius: 8px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 48px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 24px;
+  }
+}
+
+.contact-name-email-wrapper {
+  display: flex;
+  gap: 24px;
+  .input-wrapper {
+    width: 100%;
+  }
+}
+
+.contact-text-wrapper {
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  //justify-content: center;
+}
+
+.contact-button-wrapper {
+  width: 50%;
+  button {
+    background-color: rgba(29, 29, 29, 1);
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
+    border-style: none;
+    width: 100%;
+    cursor: pointer;
+  }
+}

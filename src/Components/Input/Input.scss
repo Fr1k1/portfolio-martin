@@ -1,0 +1,12 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    //background-color: red;
+    border: none;
+    border-color: transparent;
+    border-radius: 8px;
+    padding: 12px;
+  }
+}

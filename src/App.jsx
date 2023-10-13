@@ -1,4 +1,5 @@
 import "./App.scss";
+import Contact from "./Components/Contact/Contact";
 import Experience from "./Components/Experience/Experience";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
@@ -17,6 +18,7 @@ function App() {
         <TechStack />
         <Services />
         <Experience />
+        <Contact />
       </div>
     </>
   );

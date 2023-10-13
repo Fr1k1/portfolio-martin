@@ -1,16 +1,13 @@
 .experience-icon-wrapper {
-  //background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.vertical-timeline-element-content {
-  //   display: flex;
-  //   width: 100%;
-  //   flex-direction: column;
-}
-
 .max-width {
   width: 100% !important;
+}
+
+.experience-wrapper {
+  margin-bottom: 120px;
 }
