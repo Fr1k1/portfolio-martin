@@ -1,0 +1,29 @@
+.btn-scroll-to-top {
+  bottom: 48px;
+  right: 30px;
+  position: fixed;
+  font-size: 3rem;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 55px;
+  z-index: 1;
+}
+
+.btn-scroll-to-top:hover {
+  transition: 1s;
+  scale: 1.2;
+}
+
+// @media screen and ($tablet) {
+//   .btn-scroll-to-top {
+//     bottom: 120px;
+//   }
+// }
+
+// @media screen and ($desktopLarge) {
+//   .btn-scroll-to-top {
+//     bottom: 52px;
+//     right: 30px;
+//   }
+// }
