@@ -1,33 +1,32 @@
 import ServiceCard from "../ServiceCard/ServiceCard";
 import "./Services.scss";
-import { CodeBlock } from "@phosphor-icons/react";
 import { servicesData } from "../../ServiceCardData";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <div className="services-parent-wrapper">
-      <div className="techstack-text-wrapper">
-        <h4>SERVICES</h4>
-      </div>
-      {/* <ServiceCard
-        text={
-          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam voluptate quisquam libero ipsum esse rerum reiciendis repellendus fugit labore illo. Harum exercitationem facere repellendus delectus, deserunt vero sit amet labore?"
-        }
-        title={"Naslov"}
-        icon={<CodeBlock size={24} />}
-      /> */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="services-parent-wrapper">
+        <div className="techstack-text-wrapper">
+          <h4>SERVICES</h4>
+        </div>
 
-      <div className="services-wrapper">
-        {servicesData.map((service) => (
-          <ServiceCard
-            key={service.id}
-            icon={service.icon}
-            title={service.title}
-            text={service.text}
-          />
-        ))}
+        <div className="services-wrapper">
+          {servicesData.map((service) => (
+            <ServiceCard
+              key={service.id}
+              icon={service.icon}
+              title={service.title}
+              text={service.text}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
