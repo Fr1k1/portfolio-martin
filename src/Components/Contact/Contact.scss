@@ -18,6 +18,16 @@
     width: 50%;
     gap: 24px;
   }
+
+  textarea {
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-bottom: 1px solid red;
+    //border-color: transparent;
+    //border-radius: 8px;
+    padding: 12px;
+    padding-left: 0;
+  }
 }
 
 .contact-name-email-wrapper {
@@ -46,5 +56,16 @@
     border-style: none;
     width: 100%;
     cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      color: black;
+      transition: 0.5s all;
+    }
   }
+}
+
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
 }

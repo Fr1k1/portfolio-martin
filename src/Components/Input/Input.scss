@@ -3,10 +3,17 @@
   flex-direction: column;
 
   input {
-    //background-color: red;
+    background-color: rgb(242, 242, 242);
     border: none;
-    border-color: transparent;
-    border-radius: 8px;
+    border-bottom: 1px solid red;
+    //border-color: transparent;
+    //border-radius: 8px;
     padding: 12px;
+    padding-left: 0;
+
+    // &:focus {
+    //   border: 1px;
+    //   border: 1px solid green;
+    // }
   }
 }
