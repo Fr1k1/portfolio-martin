@@ -1,3 +1,5 @@
+@import "../../utils/theme.scss";
+
 .contact-wrapper {
   margin-bottom: 120px;
 }
@@ -6,17 +8,26 @@
   background-color: rgb(242, 242, 242);
   box-shadow: 0 0 5px red;
   display: flex;
+  flex-direction: column;
   gap: 80px;
   border-radius: 8px;
   width: 70%;
   margin: 0 auto;
   padding: 48px;
 
+  @media screen and ($desktop) {
+    flex-direction: row;
+  }
+
   form {
     display: flex;
     flex-direction: column;
-    width: 50%;
     gap: 24px;
+    width: 100%;
+
+    @media screen and ($desktop) {
+      width: 50%;
+    }
   }
 
   textarea {
@@ -31,7 +42,11 @@
 }
 
 .contact-name-email-wrapper {
+  @media screen and ($desktop) {
+    flex-direction: row;
+  }
   display: flex;
+  flex-direction: column;
   gap: 24px;
   .input-wrapper {
     width: 100%;
@@ -47,7 +62,11 @@
 }
 
 .contact-button-wrapper {
-  width: 50%;
+  width: 100%;
+
+  @media screen and ($desktop) {
+    width: 50%;
+  }
   button {
     background-color: rgba(29, 29, 29, 1);
     color: white;
