@@ -1,0 +1,41 @@
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.icons {
+  padding: 16px;
+  background-color: rgba(217, 217, 217, 1);
+  display: flex;
+  //position: relative;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  //background-color: green;
+  margin: 0 auto;
+  //padding-top: 12px;
+  padding-bottom: 12px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    //width: 100%;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 12px;
+    text-align: center;
+  }
+
+  li {
+    text-decoration: none;
+  }
+}

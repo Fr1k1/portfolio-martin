@@ -1,8 +1,17 @@
+@import "../../utils/theme.scss";
+
 .projects-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and ($desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 120px;
+  }
 }
 
 .projects-text-wrapper {

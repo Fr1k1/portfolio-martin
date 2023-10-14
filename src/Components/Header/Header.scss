@@ -1,8 +1,15 @@
+@import "../../utils/theme.scss";
+
 .header-wrapper {
   background-color: rgba(217, 217, 217, 1);
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  padding-right: 100px;
-  padding-left: 100px;
+
+  @media screen and ($desktop) {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
 }
+
+//desktop code:
