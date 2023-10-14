@@ -1,0 +1,22 @@
+.footer-parent-wrapper {
+  background-color: rgba(29, 29, 29, 1);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  //border-top: 3px solid blue;
+}
+
+.footer-icons-wrapper {
+  //background-color: green;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
