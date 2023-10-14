@@ -1,3 +1,5 @@
+@import "../../utils/theme.scss";
+
 .service-card-wrapper {
   border-radius: 8px;
   background-color: rgba(242, 242, 242, 1);
@@ -13,7 +15,11 @@
   gap: 18px;
 
   h4 {
-    font-size: 24px;
+    font-size: 17px;
+
+    @media screen and ($desktop) {
+      font-size: 24px;
+    }
     font-weight: 500;
     line-height: 47px;
     font-family: "Jost", sans-serif;

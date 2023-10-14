@@ -18,10 +18,10 @@ function App() {
 
       <div className="content-wrapper">
         <Projects />
-        {/* <TechStack />
+        <TechStack />
         <Services />
         <Experience />
-        <Contact /> */}
+        <Contact />
       </div>
       <Footer />
     </>

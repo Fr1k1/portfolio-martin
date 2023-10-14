@@ -6,10 +6,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
 
   @media screen and ($desktop) {
     justify-content: space-between;
-    margin-bottom: 120px;
     flex-direction: row;
     text-align: center;
   }

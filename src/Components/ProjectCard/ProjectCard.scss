@@ -1,4 +1,10 @@
+@import "../../utils/theme.scss";
+
 .project-card-wrapper {
+  width: 300px;
+  @media screen and ($desktop) {
+    width: 400px;
+  }
   background-color: rgba(29, 29, 29, 1);
   border-radius: 8px;
   padding-left: 40px;
@@ -6,7 +12,6 @@
   padding-bottom: 12px;
   display: flex;
   justify-content: flex-end;
-  width: 400px;
   //height: 300px;
 
   img {
