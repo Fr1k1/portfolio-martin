@@ -10,7 +10,7 @@ const TechStack = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="techstack-parent-wrapper">
+      <div className="techstack-parent-wrapper" id="tech-stack">
         <div className="techstack-text-wrapper">
           <h4>TECHSTACK</h4>
         </div>

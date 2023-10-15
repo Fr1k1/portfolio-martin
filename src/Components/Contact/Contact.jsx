@@ -3,6 +3,12 @@ import Input from "../Input/Input";
 import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+
+import toast, { Toaster } from "react-hot-toast";
+
+const success = () => toast.success("Successfully sent!");
+const failure = () => toast.error("Something went wrong");
+
 const Contact = () => {
   const [mail, setMail] = useState("");
   const [description, setDescription] = useState("");
@@ -13,7 +19,7 @@ const Contact = () => {
     e.preventDefault();
 
     // if (mail === "" || description === "") {
-    //   //toast.error("Molim ispunite podatke za mail i opis");
+    //   toast.error("Please enter your email and description");
     //   return;
     // }
 
@@ -26,8 +32,10 @@ const Contact = () => {
       );
       //toast.success("Uspješno poslano");
       console.log("Uspjesno poslano");
+      success();
     } catch (err) {
       console.log("Doslo je do pogreske");
+      failure();
       // toast.error("Nešto je pošlo po krivu");
     }
   }
@@ -37,7 +45,7 @@ const Contact = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="contact-wrapper">
+      <div className="contact-wrapper" id="contact">
         <div className="techstack-text-wrapper">
           <h4>CONTACT</h4>
         </div>
@@ -78,6 +86,7 @@ const Contact = () => {
 
             <div className="contact-button-wrapper">
               <button onClick={sendEmail}>Contact me</button>
+              <Toaster />
             </div>
           </form>
         </div>

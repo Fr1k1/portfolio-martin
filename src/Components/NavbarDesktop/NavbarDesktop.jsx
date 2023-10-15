@@ -1,6 +1,6 @@
 import "./NavbarDesktop.scss";
 import Logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 
 const NavbarDesktop = () => {
@@ -10,18 +10,24 @@ const NavbarDesktop = () => {
 
       <nav className="desktop-navbar">
         <ul>
-          <li>
+          {/* <li>
             <Link to="/about">About</Link>
+          </li> */}
+          <li>
+            <Link to="tech-stack" smooth={true} duration={800}>
+              Tech stack
+            </Link>
           </li>
           <li>
-            <Link to="/tech-stack">Tech stack</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
+            <Link to="projects" smooth={true} duration={800}>
+              Projects
+            </Link>
           </li>
 
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="contact" smooth={true} duration={800}>
+              Contact
+            </Link>
           </li>
         </ul>
         <GithubLogo size={32} />

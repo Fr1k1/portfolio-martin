@@ -36,9 +36,9 @@ const NavbarMobile = () => {
       </div>
       <nav className={openNav ? "nav-bar" : "hidden"} onClick={closeNav}>
         <ul>
-          <li>
+          {/* <li>
             <Link to="/about">About</Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/tech-stack">Tech stack</Link>
           </li>

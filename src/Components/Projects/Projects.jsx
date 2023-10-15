@@ -10,7 +10,7 @@ const Projects = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="projects-parent-wrapper">
+      <div className="projects-parent-wrapper" id="projects">
         <div className="projects-text-wrapper">
           <h4>PROJECTS</h4>
           <h5>+ more</h5>
