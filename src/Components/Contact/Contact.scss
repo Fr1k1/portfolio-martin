@@ -42,14 +42,15 @@
 }
 
 .contact-name-email-wrapper {
-  @media screen and ($desktop) {
-    flex-direction: row;
-  }
   display: flex;
   flex-direction: column;
   gap: 24px;
   .input-wrapper {
     width: 100%;
+  }
+
+  @media screen and ($tabletLarge) {
+    flex-direction: column;
   }
 }
 

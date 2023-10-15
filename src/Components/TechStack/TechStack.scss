@@ -5,6 +5,12 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media screen and ($desktopLarge) {
+    padding-left: 0;
+  }
 
   h4 {
     line-height: 47px;
@@ -24,12 +30,19 @@
 .techstack-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 40%; //this looks good but fix it using display flex later
+  justify-items: center;
   margin: 0 auto;
   justify-content: center;
   gap: 25px;
   //align-items: center;
-  @media screen and ($desktop) {
+
+  @media screen and ($tablet) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    justify-items: center;
+  }
+  @media screen and ($desktopLarge) {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     width: 100%;

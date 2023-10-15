@@ -7,6 +7,10 @@
   text-align: justify;
   line-height: 30px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+
+  @media screen and ($tabletLarge) {
+    //width: 80%;
+  }
 }
 
 .service-card-icon-title-wrapper {

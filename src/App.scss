@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jost:wght@500&family=Poppins&display=swap");
-
+@import "./utils/theme.scss";
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +16,8 @@ body {
 .content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+
+  @media screen and ($desktop) {
+    padding: 0;
+  }
 }
