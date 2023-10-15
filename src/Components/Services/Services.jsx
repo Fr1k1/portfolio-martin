@@ -10,7 +10,7 @@ const Services = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="services-parent-wrapper">
+      <div className="services-parent-wrapper" id="services">
         <div className="techstack-text-wrapper">
           <h4>SERVICES</h4>
         </div>

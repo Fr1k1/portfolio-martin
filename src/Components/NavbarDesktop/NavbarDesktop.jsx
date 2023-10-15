@@ -10,17 +10,26 @@ const NavbarDesktop = () => {
 
       <nav className="desktop-navbar">
         <ul>
-          {/* <li>
-            <Link to="/about">About</Link>
-          </li> */}
+          <li>
+            <Link to="projects" smooth={true} duration={800}>
+              Projects
+            </Link>
+          </li>
           <li>
             <Link to="tech-stack" smooth={true} duration={800}>
               Tech stack
             </Link>
           </li>
+
           <li>
-            <Link to="projects" smooth={true} duration={800}>
-              Projects
+            <Link to="services" smooth={true} duration={800}>
+              Services
+            </Link>
+          </li>
+
+          <li>
+            <Link to="experience" smooth={true} duration={800}>
+              Experience
             </Link>
           </li>
 
@@ -30,6 +39,7 @@ const NavbarDesktop = () => {
             </Link>
           </li>
         </ul>
+
         <GithubLogo size={32} />
         <LinkedinLogo size={32} />
       </nav>

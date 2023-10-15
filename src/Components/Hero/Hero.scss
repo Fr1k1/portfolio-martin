@@ -22,6 +22,7 @@
   flex-direction: column;
 
   @media screen and ($desktop) {
+    width: 70%;
     h1 {
       color: rgba(73, 73, 73, 1);
       font-size: 128px;

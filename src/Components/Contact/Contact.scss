@@ -11,12 +11,13 @@
   flex-direction: column;
   gap: 80px;
   border-radius: 8px;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding: 48px;
 
-  @media screen and ($desktop) {
+  @media screen and ($desktopLarge) {
     flex-direction: row;
+    width: 100%;
   }
 
   form {

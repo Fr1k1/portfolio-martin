@@ -10,7 +10,7 @@ import JavaScriptIcon from "../../assets/javascript.png";
 
 const Experience = () => {
   return (
-    <div className="experience-wrapper">
+    <div className="experience-wrapper" id="experience">
       <div className="techstack-text-wrapper">
         <h4>EXPERIENCE</h4>
       </div>
@@ -111,7 +111,7 @@ const Experience = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ display: "flex", alignItems: "center" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="April 2023 - Jun 2023"
+          date="Jul 2022 - Sept 2022"
           iconStyle={{
             background: "rgba(154, 154, 154, 1)",
             color: "#fff",
