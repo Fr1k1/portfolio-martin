@@ -22,6 +22,7 @@ const Services = () => {
               icon={service.icon}
               title={service.title}
               text={service.text}
+              background={service.background}
             />
           ))}
         </div>

@@ -54,10 +54,13 @@ const Contact = () => {
           <div className="contact-text-wrapper">
             <h3>Wanna collab? Message me here:</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
-              eos natus molestias quaerat expedita! Aut officiis debitis
-              suscipit sit quis! Quibusdam nemo pariatur eos cum quod corporis
-              enim, ratione maxime.
+              Hey there! If youre as enthusiastic about creating something
+              awesome as I am, Id love to connect. Whether you have a project
+              idea, need some technical advice, or just want to say hello, Im
+              just a message away. Your thoughts and ideas matter to me, and Im
+              eager to hear what you have in mind. Lets embark on this journey
+              of creativity and innovation together! Cant wait to start the
+              conversation with you!
             </p>
           </div>
           <form action="" id="contact-form" ref={form}>
