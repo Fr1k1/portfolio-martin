@@ -40,8 +40,24 @@ const NavbarDesktop = () => {
           </li>
         </ul>
 
-        <GithubLogo size={32} />
-        <LinkedinLogo size={32} />
+        <div className="navbar-icons-wrapper">
+          <GithubLogo
+            size={32}
+            onClick={() => window.open("https://github.com/Fr1k1", "_blank")}
+            cursor={"pointer"}
+          />
+
+          <LinkedinLogo
+            size={32}
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/martin-fri%C5%A1%C4%8Di%C4%87-6164ab202/",
+                "_blank"
+              )
+            }
+            cursor={"pointer"}
+          />
+        </div>
       </nav>
     </div>
   );
