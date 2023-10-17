@@ -32,17 +32,22 @@ export const projects = [
     id: 4,
     projectName: "Buketomat",
     image: Buketomat,
+    projectDescription:
+      "App made using Kotlin and PHP as an assignment on college with my team",
   },
 
   {
     id: 5,
     projectName: "Angular movies app",
     image: MoviesApp,
+    projectDescription: "App made using Angular and Express...using RestAPI ",
   },
 
   {
     id: 6,
     projectName: "Travel order app",
     image: TravelOrderApp,
+    projectDescription:
+      "App made using jQuery, ASP.NET and JavaScript on my summer internship at SICK Hrvatska",
   },
 ];
