@@ -22,6 +22,8 @@ const ProjectCard = ({ image, projectName, projectDescription }) => {
 
 ProjectCard.propTypes = {
   image: PropTypes.string,
+  projectName: PropTypes.string,
+  projectDescription: PropTypes.string,
 };
 
 export default ProjectCard;
