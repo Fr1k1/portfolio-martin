@@ -1,4 +1,5 @@
 import "./ServiceCard.scss";
+import PropTypes from "prop-types";
 
 const ServiceCard = ({ icon, title, text, background }) => {
   return (
@@ -14,6 +15,13 @@ const ServiceCard = ({ icon, title, text, background }) => {
       <p>{text}</p>
     </div>
   );
+};
+
+ServiceCard.propTypes = {
+  icon: PropTypes.node,
+  title: PropTypes.string,
+  text: PropTypes.string,
+  background: PropTypes.string,
 };
 
 export default ServiceCard;

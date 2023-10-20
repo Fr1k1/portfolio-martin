@@ -18,10 +18,10 @@ const Contact = () => {
   async function sendEmail(e) {
     e.preventDefault();
 
-    // if (mail === "" || description === "") {
-    //   toast.error("Please enter your email and description");
-    //   return;
-    // }
+    if (mail === "" || description === "") {
+      toast.error("Please enter your email and description");
+      return;
+    }
 
     try {
       await emailjs.sendForm(
@@ -30,13 +30,11 @@ const Contact = () => {
         form.current,
         "Z_0-Cs6CmcZEESvvj"
       );
-      //toast.success("Uspješno poslano");
       console.log("Uspjesno poslano");
       success();
     } catch (err) {
       console.log("Doslo je do pogreske");
       failure();
-      // toast.error("Nešto je pošlo po krivu");
     }
   }
   return (

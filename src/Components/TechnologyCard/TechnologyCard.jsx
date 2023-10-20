@@ -1,4 +1,5 @@
 import "./TechnologyCard.scss";
+import PropTypes from "prop-types";
 
 const TechnologyCard = ({ logo }) => {
   return (
@@ -6,6 +7,10 @@ const TechnologyCard = ({ logo }) => {
       <img src={logo} alt="" />
     </div>
   );
+};
+
+TechnologyCard.propTypes = {
+  logo: PropTypes.string,
 };
 
 export default TechnologyCard;
