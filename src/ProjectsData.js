@@ -11,6 +11,7 @@ export const projects = [
     projectName: "PCHut",
     image: PCHut,
     projectDescription: "App made using Laravel and Vue..it represents PC shop",
+    link: "https://github.com/Fosleen/PCHUT",
   },
 
   {
@@ -19,6 +20,7 @@ export const projects = [
     image: Stonks,
     projectDescription:
       "App made in team using C# and entity framework...modern cash features like facial recognition and other modern features",
+    link: "https://github.com/Fr1k1/STONKS",
   },
   {
     id: 3,
@@ -26,6 +28,8 @@ export const projects = [
     image: Movement,
     projectDescription:
       "App made using React and Express...winning application on RiHack 2023",
+
+    link: "https://github.com/Fr1k1/Ri-Hack-2023",
   },
 
   {
@@ -34,6 +38,7 @@ export const projects = [
     image: Buketomat,
     projectDescription:
       "App made using Kotlin and PHP as an assignment on college with my team",
+    link: "https://github.com/Fr1k1/Buketomat_new",
   },
 
   {
@@ -41,6 +46,7 @@ export const projects = [
     projectName: "Angular movies app",
     image: MoviesApp,
     projectDescription: "App made using Angular and Express...using RestAPI ",
+    link: "https://github.com/Fr1k1/Angular_movies_application",
   },
 
   {
@@ -49,5 +55,6 @@ export const projects = [
     image: TravelOrderApp,
     projectDescription:
       "App made using jQuery, ASP.NET and JavaScript on my summer internship at SICK Hrvatska",
+    link: "https://github.com/Fr1k1/TravelOrderApp",
   },
 ];

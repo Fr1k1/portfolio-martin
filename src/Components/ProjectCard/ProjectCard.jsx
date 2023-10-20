@@ -2,7 +2,7 @@ import { GithubLogo } from "@phosphor-icons/react";
 import "./ProjectCard.scss";
 import PropTypes from "prop-types";
 
-const ProjectCard = ({ image, projectName, projectDescription }) => {
+const ProjectCard = ({ image, projectName, projectDescription, link }) => {
   return (
     <div className="project-card-wrapper">
       <div className="project-card-image-wrapper">
@@ -13,7 +13,9 @@ const ProjectCard = ({ image, projectName, projectDescription }) => {
         <p>{projectDescription}</p>
 
         <div className="hover-content-icon-wrapper">
-          <GithubLogo size={32} className="content-icon" />
+          <a href={link} target="_blank" rel="noreferrer">
+            <GithubLogo size={32} className="content-icon" />
+          </a>
         </div>
       </div>
     </div>
@@ -24,6 +26,7 @@ ProjectCard.propTypes = {
   image: PropTypes.string,
   projectName: PropTypes.string,
   projectDescription: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default ProjectCard;

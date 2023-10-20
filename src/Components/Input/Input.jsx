@@ -13,7 +13,7 @@ const Input = ({ label, name, onChange }) => {
 Input.propTypes = {
   label: PropTypes.string,
   name: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func,
 };
 
 export default Input;
