@@ -13,7 +13,9 @@ const Projects = () => {
       <div className="projects-parent-wrapper" id="projects">
         <div className="projects-text-wrapper">
           <h4>PROJECTS</h4>
-          <h5>+ more</h5>
+          <a href="https://github.com/Fr1k1" target="blank">
+            + more
+          </a>
         </div>
         <div className="projects-wrapper">
           {projects.map((project) => (

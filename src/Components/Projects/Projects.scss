@@ -50,10 +50,15 @@
     font-family: "Jost", sans-serif;
   }
 
-  h5 {
+  a {
+    cursor: pointer;
     font-family: "Jost", sans-serif;
     font-size: 24px;
     font-weight: 500;
     text-decoration: underline;
+
+    &:visited {
+      color: black;
+    }
   }
 }

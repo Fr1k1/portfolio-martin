@@ -4,6 +4,7 @@ import Stonks from "./assets/stonks.png";
 import Buketomat from "./assets/buketomat.png";
 import MoviesApp from "./assets/MovieApp.png";
 import TravelOrderApp from "./assets/travelorderapp.png";
+import Stylo from "./assets/stylo_img.png";
 
 export const projects = [
   {
@@ -16,6 +17,15 @@ export const projects = [
 
   {
     id: 2,
+    projectName: "Stylo",
+    image: Stylo,
+    projectDescription:
+      "App made using MACH architecture, Commercetools and Contentful in collaboration with IBM IX",
+    link: "https://github.com/Fr1k1/Stylo",
+  },
+
+  {
+    id: 3,
     projectName: "Stonks",
     image: Stonks,
     projectDescription:
@@ -23,7 +33,7 @@ export const projects = [
     link: "https://github.com/Fr1k1/STONKS",
   },
   {
-    id: 3,
+    id: 4,
     projectName: "Movement",
     image: Movement,
     projectDescription:
@@ -33,16 +43,7 @@ export const projects = [
   },
 
   {
-    id: 4,
-    projectName: "Buketomat",
-    image: Buketomat,
-    projectDescription:
-      "App made using Kotlin and PHP as an assignment on college with my team",
-    link: "https://github.com/Fr1k1/Buketomat_new",
-  },
-
-  {
-    id: 5,
+    id: 6,
     projectName: "Angular movies app",
     image: MoviesApp,
     projectDescription: "App made using Angular and Express...using RestAPI ",
@@ -50,11 +51,20 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     projectName: "Travel order app",
     image: TravelOrderApp,
     projectDescription:
       "App made using jQuery, ASP.NET and JavaScript on my summer internship at SICK Hrvatska",
     link: "https://github.com/Fr1k1/TravelOrderApp",
+  },
+
+  {
+    id: 5,
+    projectName: "Buketomat",
+    image: Buketomat,
+    projectDescription:
+      "App made using Kotlin and PHP as an assignment on college with my team",
+    link: "https://github.com/Fr1k1/Buketomat_new",
   },
 ];
