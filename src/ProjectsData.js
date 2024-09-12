@@ -5,6 +5,9 @@ import Buketomat from "./assets/buketomat.png";
 import MoviesApp from "./assets/MovieApp.png";
 import TravelOrderApp from "./assets/travelorderapp.png";
 import Stylo from "./assets/stylo_img.png";
+import Nwtis from "./assets/nwtis.png";
+import TravelBloggers from "./assets/travel_bloggers.png";
+import NepaliSignsApp from "./assets/nepali_signs_app.png";
 
 export const projects = [
   {
@@ -66,5 +69,32 @@ export const projects = [
     projectDescription:
       "App made using Kotlin and PHP as an assignment on college with my team",
     link: "https://github.com/Fr1k1/Buketomat_new",
+  },
+
+  {
+    id: 8,
+    projectName: "Telemetry radars app",
+    image: Nwtis,
+    projectDescription:
+      "App made using Java, conteinerization in Docker and Apache. Multithreading terminal app",
+    link: "https://github.com/Fr1k1/nwtis-telemetry-vehicles-radars",
+  },
+
+  {
+    id: 9,
+    projectName: "TravEM CMS blog",
+    image: TravelBloggers,
+    projectDescription:
+      "Live app made for traveling youtubers...made using React, Express and Digital Ocean for cloud. Custom CMS. Live demo available on link below",
+    link: "https://putujemstravem.com/",
+  },
+
+  {
+    id: 10,
+    projectName: "Nepali signs app",
+    image: NepaliSignsApp,
+    projectDescription:
+      "Android app made in React native and available on play store soon",
+    link: "",
   },
 ];

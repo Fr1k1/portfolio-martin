@@ -16,9 +16,9 @@ const TechStack = () => {
         </div>
 
         <div className="techstack-wrapper">
-          {technologies.map((technology) => (
+          {technologies.map((technology, index) => (
             <TechnologyCard
-              key={technology.id}
+              key={index}
               name={technology.name}
               logo={technology.logo}
             />

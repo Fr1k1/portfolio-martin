@@ -39,7 +39,10 @@ const Experience = () => {
           <div className="vertical-timeline-element-content max-width">
             <h3 className="vertical-timeline-element-title">React developer</h3>
             <h4 className="vertical-timeline-element-subtitle">Deck99</h4>
-            <p>Developing web apps using React, NextJS, ChakraUI..</p>
+            <p>
+              Developing web apps using React, NextJS, developing Chrome
+              extensions...
+            </p>
           </div>
         </VerticalTimelineElement>
 

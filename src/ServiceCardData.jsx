@@ -4,7 +4,7 @@ export const servicesData = [
   {
     id: 1,
     title: "Web development",
-    text: "I excel in building modern web applications by skillfully combining React, Vue, Angular, and Laravel. With a keen eye for design and a robust back-end foundation, I create seamless and engaging user experiences. My approach blends versatility, efficiency, and creativity, resulting in web solutions that leave a lasting impact. ",
+    text: "I excel in building modern web applications by skillfully combining React, Vue, Angular, NextJS and ExpressJS. With a keen eye for design and a robust back-end foundation, I create seamless and engaging user experiences. My approach blends versatility, efficiency, and creativity, resulting in web solutions that leave a lasting impact. ",
     icon: <Code size={20} />,
     background: "rgba(255, 198, 198, 1)",
   },
@@ -12,7 +12,7 @@ export const servicesData = [
   {
     id: 2,
     title: "Mobile development",
-    text: "I specialize in crafting compelling mobile applications, wielding the power of Flutter and Kotlin. With a creative touch and a strong foundation in back-end development, I seamlessly blend aesthetic design with robust functionality to deliver engaging mobile experiences.",
+    text: "I specialize in crafting compelling mobile applications, wielding the power of React Native and Kotlin. With a creative touch and a strong foundation in back-end development, I seamlessly blend aesthetic design with robust functionality to deliver engaging mobile experiences.",
     icon: <AndroidLogo size={20} />,
     background: "rgba(209, 198, 255, 1)",
   },
