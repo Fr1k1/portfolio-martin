@@ -11,6 +11,7 @@ import Typescript from "./assets/typescript.png";
 import Javascript from "./assets/javascript.png";
 import Node from "./assets/node.png";
 import Next from "./assets/next_logo.png";
+import Java from "./assets/java.png";
 
 export const technologies = [
   {
@@ -37,6 +38,10 @@ export const technologies = [
 
   {
     logo: Node,
+  },
+
+  {
+    logo: Java,
   },
 
   {
