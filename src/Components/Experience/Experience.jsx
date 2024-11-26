@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import ReactIcon from "../../assets/react.png";
 import CSharpIcon from "../../assets/c_sharp.png";
 import JavaScriptIcon from "../../assets/javascript.png";
+import JavaIcon from "../../assets/java.png";
 
 const Experience = () => {
   return (
@@ -19,7 +20,37 @@ const Experience = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ display: "flex", alignItems: "center" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="Jun 2023 - present"
+          date="November 2024 - present"
+          iconStyle={{
+            background: "rgba(29, 29, 29, 1)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          icon={
+            <div className="experience-icon-wrapper">
+              <img src={JavaIcon} style={{ height: "40px" }} alt="React Icon" />
+            </div>
+          }
+        >
+          <div className="vertical-timeline-element-content max-width">
+            <h3 className="vertical-timeline-element-title">
+              Java Backend developer
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Emil Frey Digital
+            </h4>
+            <p>
+              Spring Boot, Quarkus, Kubernetes, Cross-country Pipelines, Large
+              scale software development
+            </p>
+          </div>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ display: "flex", alignItems: "center" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+          date="Jun 2023 - November 2024"
           iconStyle={{
             background: "rgba(29, 29, 29, 1)",
             display: "flex",
