@@ -2,7 +2,7 @@ import { useRef, useMemo, Suspense, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Stars } from "@react-three/drei";
 import { motion, useReducedMotion } from "framer-motion";
-import { Link } from "react-scroll";
+import ScrollLink from "../ScrollLink/ScrollLink";
 import { ArrowDown, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import "./Hero.scss";
 
@@ -259,12 +259,12 @@ const Hero = () => {
             </motion.div>
 
             <motion.div variants={item} className="hero-ctas">
-              <Link to="contact" smooth duration={600} offset={-80}>
+              <ScrollLink to="contact" smooth duration={600} offset={-80}>
                 <button className="btn-primary">Get in touch</button>
-              </Link>
-              <Link to="projects" smooth duration={600} offset={-80}>
+              </ScrollLink>
+              <ScrollLink to="projects" smooth duration={600} offset={-80}>
                 <button className="btn-ghost">View my work</button>
-              </Link>
+              </ScrollLink>
             </motion.div>
 
             <motion.div variants={item} className="hero-socials">

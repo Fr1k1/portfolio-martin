@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+import ScrollLink from "../ScrollLink/ScrollLink";
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import "./NavbarDesktop.scss";
 
@@ -34,7 +34,7 @@ const NavbarDesktop = () => {
         <ul className="nav-links">
           {links.map(({ label, to }) => (
             <li key={to}>
-              <Link
+              <ScrollLink
                 to={to}
                 smooth
                 duration={600}
@@ -44,7 +44,7 @@ const NavbarDesktop = () => {
                 className="nav-link"
               >
                 {label}
-              </Link>
+              </ScrollLink>
             </li>
           ))}
         </ul>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { List, X, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
-import { Link } from "react-scroll";
+import ScrollLink from "../ScrollLink/ScrollLink";
 import "./NavbarMobile.scss";
 
 const links = [
@@ -46,7 +46,7 @@ const NavbarMobile = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.08 + i * 0.06, duration: 0.35 }}
                 >
-                  <Link
+                  <ScrollLink
                     to={to}
                     smooth
                     duration={600}
@@ -56,7 +56,7 @@ const NavbarMobile = () => {
                   >
                     <span className="link-num">0{i + 1}</span>
                     {label}
-                  </Link>
+                  </ScrollLink>
                 </motion.li>
               ))}
             </ul>
