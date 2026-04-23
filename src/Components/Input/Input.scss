@@ -1,19 +1,35 @@
-.input-wrapper {
+.input-field {
   display: flex;
   flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-2);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
 
   input {
-    background-color: rgb(242, 242, 242);
-    border: none;
-    border-bottom: 1px solid red;
-    //border-color: transparent;
-    //border-radius: 8px;
-    padding: 12px;
-    padding-left: 0;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    padding: 11px 14px;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 14px;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.2s, box-shadow 0.2s;
 
-    // &:focus {
-    //   border: 1px;
-    //   border: 1px solid green;
-    // }
+    &::placeholder {
+      color: var(--text-3);
+    }
+
+    &:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
   }
 }

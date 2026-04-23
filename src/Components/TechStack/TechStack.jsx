@@ -1,31 +1,45 @@
-import "./TechStack.scss";
+import { motion } from "framer-motion";
 import { technologies } from "../../TechnologiesData";
 import TechnologyCard from "../TechnologyCard/TechnologyCard";
-import { motion } from "framer-motion";
+import "./TechStack.scss";
 
 const TechStack = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-    >
-      <div className="techstack-parent-wrapper" id="tech-stack">
-        <div className="techstack-text-wrapper">
-          <h4>TECHSTACK</h4>
-        </div>
+    <section className="techstack section" id="tech-stack">
+      <div className="content-wrapper">
+        <motion.div
+          className="techstack-header"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="section-label">Skills</span>
+          <h2 className="section-title">Tech Stack</h2>
+          <p className="section-sub">
+            Technologies I work with daily to build scalable systems and polished UIs.
+          </p>
+        </motion.div>
 
-        <div className="techstack-wrapper">
-          {technologies.map((technology, index) => (
-            <TechnologyCard
-              key={index}
-              name={technology.name}
-              logo={technology.logo}
-            />
+        <div className="tech-grid">
+          {technologies.map((tech, i) => (
+            <motion.div
+              key={tech.name}
+              initial={{ opacity: 0, scale: 0.82 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{
+                duration: 0.4,
+                delay: i * 0.04,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+            >
+              <TechnologyCard logo={tech.logo} name={tech.name} category={tech.category} />
+            </motion.div>
           ))}
         </div>
       </div>
-    </motion.div>
+    </section>
   );
 };
 

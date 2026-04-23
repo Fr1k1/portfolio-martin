@@ -1,27 +1,15 @@
 import "./ServiceCard.scss";
-import PropTypes from "prop-types";
 
-const ServiceCard = ({ icon, title, text, background }) => {
+const ServiceCard = ({ icon, title, text, color }) => {
   return (
-    <div className="service-card-wrapper">
-      <div className="service-card-icon-title-wrapper">
-        {icon && (
-          <div className="service-icon" style={{ backgroundColor: background }}>
-            {icon}
-          </div>
-        )}
-        <h4>{title}</h4>
+    <div className="service-card glass">
+      <div className="service-icon" style={{ background: `${color}20`, color }}>
+        {icon}
       </div>
-      <p>{text}</p>
+      <h3 className="service-title">{title}</h3>
+      <p className="service-text">{text}</p>
     </div>
   );
-};
-
-ServiceCard.propTypes = {
-  icon: PropTypes.node,
-  title: PropTypes.string,
-  text: PropTypes.string,
-  background: PropTypes.string,
 };
 
 export default ServiceCard;

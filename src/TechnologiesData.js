@@ -14,57 +14,18 @@ import Next from "./assets/next_logo.png";
 import Java from "./assets/java.png";
 
 export const technologies = [
-  {
-    logo: Next,
-  },
-  {
-    logo: React,
-  },
-  {
-    logo: Angular,
-  },
-
-  {
-    logo: Vue,
-  },
-
-  {
-    logo: Typescript,
-  },
-
-  {
-    logo: Javascript,
-  },
-
-  {
-    logo: Node,
-  },
-
-  {
-    logo: Java,
-  },
-
-  {
-    logo: Kotlin,
-  },
-
-  {
-    logo: Flutter,
-  },
-
-  {
-    logo: Docker,
-  },
-
-  {
-    logo: Laravel,
-  },
-
-  {
-    logo: Csharp,
-  },
-
-  {
-    logo: Figma,
-  },
+  { logo: Java,       name: "Java",       category: "Backend"   },
+  { logo: React,      name: "React",      category: "Frontend"  },
+  { logo: Next,       name: "Next.js",    category: "Frontend"  },
+  { logo: Typescript, name: "TypeScript", category: "Language"  },
+  { logo: Javascript, name: "JavaScript", category: "Language"  },
+  { logo: Node,       name: "Node.js",    category: "Backend"   },
+  { logo: Docker,     name: "Docker",     category: "DevOps"    },
+  { logo: Angular,    name: "Angular",    category: "Frontend"  },
+  { logo: Vue,        name: "Vue.js",     category: "Frontend"  },
+  { logo: Kotlin,     name: "Kotlin",     category: "Mobile"    },
+  { logo: Flutter,    name: "Flutter",    category: "Mobile"    },
+  { logo: Laravel,    name: "Laravel",    category: "Backend"   },
+  { logo: Csharp,     name: "C#",         category: "Backend"   },
+  { logo: Figma,      name: "Figma",      category: "Design"    },
 ];

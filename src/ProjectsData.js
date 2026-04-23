@@ -14,87 +14,80 @@ export const projects = [
     id: 1,
     projectName: "PCHut",
     image: PCHut,
-    projectDescription: "App made using Laravel and Vue..it represents PC shop",
+    projectDescription: "PC shop e-commerce app built with Laravel and Vue.js",
     link: "https://github.com/Fosleen/PCHUT",
+    tags: ["Laravel", "Vue.js", "MySQL"],
   },
-
   {
     id: 2,
     projectName: "Stylo",
     image: Stylo,
-    projectDescription:
-      "App made using MACH architecture, Commercetools and Contentful in collaboration with IBM IX",
+    projectDescription: "MACH architecture app using Commercetools & Contentful — built in collaboration with IBM IX",
     link: "https://github.com/Fr1k1/Stylo",
+    tags: ["React", "Commercetools", "Contentful"],
   },
-
   {
     id: 3,
     projectName: "Stonks",
     image: Stonks,
-    projectDescription:
-      "App made in team using C# and entity framework...modern cash features like facial recognition and other modern features",
+    projectDescription: "C# finance app with modern features including facial recognition",
     link: "https://github.com/Fr1k1/STONKS",
+    tags: ["C#", ".NET", "Entity Framework"],
   },
   {
     id: 4,
     projectName: "Movement",
     image: Movement,
-    projectDescription:
-      "App made using React and Express...winning application on RiHack 2023",
-
+    projectDescription: "Ri-Hack 2023 winning app built with React and Express",
     link: "https://github.com/Fr1k1/Ri-Hack-2023",
+    tags: ["React", "Express", "🏆 Ri-Hack Winner"],
   },
-
   {
     id: 6,
-    projectName: "Angular movies app",
+    projectName: "Angular Movies",
     image: MoviesApp,
-    projectDescription: "App made using Angular and Express...using RestAPI ",
+    projectDescription: "Movie discovery app using Angular and REST API",
     link: "https://github.com/Fr1k1/Angular_movies_application",
+    tags: ["Angular", "Express", "REST API"],
   },
-
   {
     id: 7,
-    projectName: "Travel order app",
+    projectName: "Travel Order App",
     image: TravelOrderApp,
-    projectDescription:
-      "App made using jQuery, ASP.NET and JavaScript on my summer internship at SICK Hrvatska",
+    projectDescription: "Travel order management system built during internship at SICK Hrvatska",
     link: "https://github.com/Fr1k1/TravelOrderApp",
+    tags: ["jQuery", "ASP.NET", "JavaScript"],
   },
-
   {
     id: 5,
     projectName: "Buketomat",
     image: Buketomat,
-    projectDescription:
-      "App made using Kotlin and PHP as an assignment on college with my team",
+    projectDescription: "Flower shop app built as a college project with Kotlin and PHP",
     link: "https://github.com/Fr1k1/Buketomat_new",
+    tags: ["Kotlin", "PHP"],
   },
-
   {
     id: 8,
-    projectName: "Telemetry radars app",
+    projectName: "Telemetry Radars",
     image: Nwtis,
-    projectDescription:
-      "App made using Java, conteinerization in Docker and Apache. Multithreading terminal app",
+    projectDescription: "Multithreaded Java app with Docker and Apache — tracking telemetry vehicles and radars",
     link: "https://github.com/Fr1k1/nwtis-telemetry-vehicles-radars",
+    tags: ["Java", "Docker", "Apache"],
   },
-
   {
     id: 9,
-    projectName: "TravEM CMS blog",
+    projectName: "TravEM CMS Blog",
     image: TravelBloggers,
-    projectDescription:
-      "Live app made for traveling youtubers...made using React, Express and Digital Ocean for cloud. Custom CMS. Live demo available on link below",
+    projectDescription: "Live travel blog platform with a custom CMS built on React, Express, and Digital Ocean",
     link: "https://putujemstravem.com/",
+    tags: ["React", "Express", "Custom CMS", "Live"],
   },
-
   {
     id: 10,
-    projectName: "Nepali signs app",
+    projectName: "Nepali Signs App",
     image: NepaliSignsApp,
-    projectDescription:
-      "Android app made in React native and available on play store soon",
+    projectDescription: "Android app for learning Nepali sign language, built in React Native",
     link: "",
+    tags: ["React Native", "Android"],
   },
 ];

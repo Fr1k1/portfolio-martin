@@ -1,30 +1,34 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowUp } from "@phosphor-icons/react";
 import "./ScrollToTop.scss";
-import { ArrowCircleUp } from "@phosphor-icons/react/dist/ssr";
 
 const ScrollToTop = () => {
-  const [showTopBtn, setShowTopBtn] = useState(false);
+  const [visible, setVisible] = useState(false);
+
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 2500) {
-        setShowTopBtn(true);
-      } else {
-        setShowTopBtn(false);
-      }
-    });
+    const onScroll = () => setVisible(window.scrollY > 600);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
-  const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
   return (
-    <div className="btn-scroll-to-top">
-      {showTopBtn ? (
-        <ArrowCircleUp onClick={goToTop} size={64} weight="fill" />
-      ) : null}
-    </div>
+    <AnimatePresence>
+      {visible && (
+        <motion.button
+          className="scroll-top"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="Scroll to top"
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.7 }}
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.2 }}
+        >
+          <ArrowUp size={18} weight="bold" />
+        </motion.button>
+      )}
+    </AnimatePresence>
   );
 };
 

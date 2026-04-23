@@ -1,29 +1,17 @@
-.btn-scroll-to-top {
-  bottom: 48px;
-  right: 30px;
+.scroll-top {
   position: fixed;
-  font-size: 3rem;
-  color: black;
-  cursor: pointer;
+  bottom: 28px;
+  right: 28px;
+  z-index: 90;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient);
   border: none;
-  border-radius: 55px;
-  z-index: 1;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.35);
 }
-
-.btn-scroll-to-top:hover {
-  transition: 1s;
-  scale: 1.2;
-}
-
-// @media screen and ($tablet) {
-//   .btn-scroll-to-top {
-//     bottom: 120px;
-//   }
-// }
-
-// @media screen and ($desktopLarge) {
-//   .btn-scroll-to-top {
-//     bottom: 52px;
-//     right: 30px;
-//   }
-// }

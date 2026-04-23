@@ -3,33 +3,30 @@ import { AndroidLogo, Code, Database, Desktop } from "@phosphor-icons/react";
 export const servicesData = [
   {
     id: 1,
-    title: "Web development",
-    text: "I excel in building modern web applications by skillfully combining React, Vue, Angular, NextJS and ExpressJS. With a keen eye for design and a robust back-end foundation, I create seamless and engaging user experiences. My approach blends versatility, efficiency, and creativity, resulting in web solutions that leave a lasting impact. ",
-    icon: <Code size={20} />,
-    background: "rgba(255, 198, 198, 1)",
+    title: "Full-Stack Development",
+    text: "Building end-to-end web apps with React, Next.js, TypeScript, and Node.js — from pixel-perfect UIs to robust REST APIs. Experienced leading frontend architecture for SaaS platforms.",
+    icon: <Code size={22} />,
+    color: "#2563EB",
   },
-
   {
     id: 2,
-    title: "Mobile development",
-    text: "I specialize in crafting compelling mobile applications, wielding the power of React Native and Kotlin. With a creative touch and a strong foundation in back-end development, I seamlessly blend aesthetic design with robust functionality to deliver engaging mobile experiences.",
-    icon: <AndroidLogo size={20} />,
-    background: "rgba(209, 198, 255, 1)",
+    title: "Backend Engineering",
+    text: "Scalable APIs and microservices with Java Quarkus, Spring Boot, and Python Flask. Experience with systems handling 20k+ DAU deployed across 10+ countries.",
+    icon: <Database size={22} />,
+    color: "#7C3AED",
   },
-
   {
     id: 3,
-    title: "Desktop apps development",
-    text: "I thrive in the realm of desktop application development, with .NET as my primary technology. Through the lens of .NET, I design and build powerful and intuitive desktop solutions that cater to diverse user needs. My expertise allows me to craft feature-rich applications that seamlessly integrate with various platforms, providing users with a smooth and impactful desktop experience.",
-    icon: <Desktop size={20} />,
-    background: "rgba(255, 232, 198, 1)",
+    title: "Cloud & DevOps",
+    text: "CI/CD pipelines, Kubernetes and Helm management, Azure DevOps, Docker containerization, Key Vault secrets, and monitoring with Prometheus and Grafana.",
+    icon: <Desktop size={22} />,
+    color: "#F97316",
   },
-
   {
     id: 4,
-    title: "Database development",
-    text: "Mastering the art of organizing and optimizing data for seamless application performance. Whether it's crafting efficient queries, designing robust database architectures, or ensuring data security and scalability, I'm well-versed in various database technologies. My expertise lies in leveraging databases to their full potential, ensuring the heart of an application is both solid and efficient, resulting in reliable and high-performing systems.",
-    icon: <Database size={20} />,
-    background: "rgba(212, 241, 218, 1)",
+    title: "Mobile Development",
+    text: "Cross-platform mobile apps with React Native and Kotlin. Experience shipping Android apps with complex navigation, native device integrations, and Play Store deployment.",
+    icon: <AndroidLogo size={22} />,
+    color: "#22C55E",
   },
 ];

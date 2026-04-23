@@ -1,17 +1,15 @@
-@import "../../utils/theme.scss";
+.services {
+  .services-header {
+    margin-bottom: 48px;
+  }
 
-.services-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin: 0 auto;
-  margin-bottom: 120px;
-  width: 80%;
-
-  @media screen and ($desktopLarge) {
+  .services-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    margin-bottom: 120px;
+    grid-template-columns: 1fr;
+    gap: 16px;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 }

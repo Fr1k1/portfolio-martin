@@ -1,38 +1,30 @@
-@import "../../utils/theme.scss";
-
-.service-card-wrapper {
-  border-radius: 8px;
-  background-color: rgba(242, 242, 242, 1);
-  padding: 16px;
-  text-align: justify;
-  line-height: 30px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
-
-  @media screen and ($tabletLarge) {
-    //width: 80%;
-  }
-}
-
-.service-card-icon-title-wrapper {
+.service-card {
+  padding: 28px;
   display: flex;
-  align-items: center;
-  gap: 18px;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
 
-  h4 {
-    font-size: 17px;
-
-    @media screen and ($desktop) {
-      font-size: 24px;
-    }
-    font-weight: 500;
-    line-height: 47px;
-    font-family: "Jost", sans-serif;
+  .service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    flex-shrink: 0;
   }
-}
 
-.service-icon {
-  border-radius: 8px;
-  display: flex;
-  padding: 6px;
-  //background-color: rgba(255, 198, 198, 1);
+  .service-title {
+    font-family: var(--font-head);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .service-text {
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.7;
+  }
 }

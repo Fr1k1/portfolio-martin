@@ -1,19 +1,19 @@
 import "./Input.scss";
-import { PropTypes } from "prop-types";
 
-const Input = ({ label, name, onChange }) => {
+const Input = ({ label, name, value, onChange }) => {
   return (
-    <div className="input-wrapper">
-      {label && <label className="input-label">{label}</label>}
-      <input className="input" type="text" name={name} onChange={onChange} />
+    <div className="input-field">
+      {label && <label htmlFor={name}>{label}</label>}
+      <input
+        type="text"
+        id={name}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={label}
+      />
     </div>
   );
-};
-
-Input.propTypes = {
-  label: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  onChange: PropTypes.func,
 };
 
 export default Input;

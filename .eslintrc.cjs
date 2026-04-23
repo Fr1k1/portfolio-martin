@@ -16,5 +16,9 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'react/no-unknown-property': [
+      'error',
+      { ignore: ['attach', 'args', 'transparent', 'sizeAttenuation', 'intensity', 'position'] },
+    ],
   },
 }

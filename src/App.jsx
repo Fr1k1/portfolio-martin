@@ -15,14 +15,11 @@ function App() {
       <ScrollToTop />
       <Header />
       <Hero />
-
-      <div className="content-wrapper">
-        <Projects />
-        <TechStack />
-        <Services />
-        <Experience />
-        <Contact />
-      </div>
+      <Projects />
+      <TechStack />
+      <Services />
+      <Experience />
+      <Contact />
       <Footer />
     </>
   );

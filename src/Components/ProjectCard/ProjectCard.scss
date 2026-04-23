@@ -1,106 +1,131 @@
-@import "../../utils/theme.scss";
-
-.project-card-wrapper {
-  cursor: pointer;
+.project-card {
   position: relative;
-  width: 280px;
-  @media screen and ($desktopLarge) {
-    width: 400px;
-  }
-  background-color: rgba(29, 29, 29, 1);
-  border-radius: 8px;
-  padding-left: 40px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  display: flex;
-  justify-content: flex-end;
-  overflow: hidden; /* This prevents the ::before pseudo-element from overflowing */
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  aspect-ratio: 16 / 10;
+  cursor: pointer;
+  transition: border-color 0.3s, transform 0.3s;
 
-  img {
-    border-radius: 8px;
+  &:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-4px);
+
+    .project-img {
+      transform: scale(1.07);
+      filter: brightness(0.35);
+    }
+
+    .project-overlay {
+      opacity: 1;
+    }
+
+    .project-bar {
+      opacity: 0;
+    }
+  }
+
+  .project-img-wrap {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+
+  .project-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(0.65);
+    transition: transform 0.45s ease, filter 0.45s ease;
   }
 
-  .hover-overlay {
+  .project-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 400;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
-
-.hover-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  opacity: 0;
-  transition: opacity 0.3s;
-  z-index: 500;
-  gap: 24px;
-
-  @media screen and ($desktopLarge) {
-    gap: 36px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  p {
-    font-size: 15px;
-  }
-}
-
-.project-card-wrapper:hover .hover-content {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.hover-content {
-  cursor: pointer;
-
-  padding: 20px;
-  display: none;
-  visibility: hidden;
-
-  @media screen and ($desktop) {
+    inset: 0;
     display: flex;
     flex-direction: column;
-
-    visibility: visible;
+    justify-content: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: linear-gradient(to top, rgba(9, 9, 11, 0.97) 55%, rgba(9, 9, 11, 0.55) 100%);
+    gap: 8px;
   }
-}
 
-.hover-content-icon-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .project-name {
+    font-family: var(--font-head);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+  }
 
-  &:hover {
-    .content-icon {
-      color: red;
+  .project-desc {
+    font-size: 12px;
+    color: var(--text-2);
+    line-height: 1.5;
+  }
+
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 4px;
+    padding: 7px 14px;
+    background: var(--gradient);
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    width: fit-content;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.85;
     }
   }
 
-  a {
-    color: black;
+  .project-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: linear-gradient(to top, rgba(9, 9, 11, 0.88) 0%, transparent 100%);
+    transition: opacity 0.3s;
+  }
+
+  .project-bar-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .project-bar-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-2);
+    transition: color 0.2s, border-color 0.2s;
+
+    &:hover {
+      color: var(--text);
+      border-color: var(--border-hover);
+    }
   }
 }

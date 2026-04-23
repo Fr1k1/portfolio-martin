@@ -1,16 +1,13 @@
 import "./TechnologyCard.scss";
-import PropTypes from "prop-types";
 
-const TechnologyCard = ({ logo }) => {
+const TechnologyCard = ({ logo, name, category }) => {
   return (
-    <div className="technology-card-wrapper">
-      <img src={logo} alt="" />
+    <div className="tech-card glass">
+      <img src={logo} alt={name} className="tech-logo" />
+      <span className="tech-name">{name}</span>
+      {category && <span className="tech-category">{category}</span>}
     </div>
   );
-};
-
-TechnologyCard.propTypes = {
-  logo: PropTypes.string,
 };
 
 export default TechnologyCard;

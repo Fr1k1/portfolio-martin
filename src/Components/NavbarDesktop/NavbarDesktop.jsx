@@ -1,65 +1,76 @@
-import "./NavbarDesktop.scss";
-import Logo from "../../assets/logo.png";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
+import "./NavbarDesktop.scss";
+
+const links = [
+  { label: "Projects",   to: "projects"    },
+  { label: "Tech Stack", to: "tech-stack"  },
+  { label: "Expertise",  to: "services"    },
+  { label: "Experience", to: "experience"  },
+  { label: "Contact",    to: "contact"     },
+];
 
 const NavbarDesktop = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <div className="navbar-desktop-wrapper">
-      <img src={Logo} alt="" />
+    <motion.nav
+      className={`nav-desktop ${scrolled ? "nav-desktop--solid" : ""}`}
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <div className="nav-inner">
+        <div className="nav-logo">MF.</div>
 
-      <nav className="desktop-navbar">
-        <ul>
-          <li>
-            <Link to="projects" smooth={true} duration={800}>
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link to="tech-stack" smooth={true} duration={800}>
-              Tech stack
-            </Link>
-          </li>
-
-          <li>
-            <Link to="services" smooth={true} duration={800}>
-              Services
-            </Link>
-          </li>
-
-          <li>
-            <Link to="experience" smooth={true} duration={800}>
-              Experience
-            </Link>
-          </li>
-
-          <li>
-            <Link to="contact" smooth={true} duration={800}>
-              Contact
-            </Link>
-          </li>
+        <ul className="nav-links">
+          {links.map(({ label, to }) => (
+            <li key={to}>
+              <Link
+                to={to}
+                smooth
+                duration={600}
+                offset={-80}
+                spy
+                activeClass="nav-link--active"
+                className="nav-link"
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
         </ul>
 
-        <div className="navbar-icons-wrapper">
-          <GithubLogo
-            size={32}
-            onClick={() => window.open("https://github.com/Fr1k1", "_blank")}
-            cursor={"pointer"}
-          />
-
-          <LinkedinLogo
-            size={32}
-            onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/martin-fri%C5%A1%C4%8Di%C4%87-6164ab202/",
-                "_blank"
-              )
-            }
-            cursor={"pointer"}
-          />
+        <div className="nav-socials">
+          <a
+            href="https://github.com/Fr1k1"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="nav-icon"
+          >
+            <GithubLogo size={19} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/martin-fri%C5%A1%C4%8Di%C4%87-928bb2247/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="nav-icon"
+          >
+            <LinkedinLogo size={19} />
+          </a>
         </div>
-      </nav>
-    </div>
+      </div>
+    </motion.nav>
   );
 };
 
