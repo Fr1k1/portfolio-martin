@@ -1,10 +1,16 @@
 .hero {
   position: relative;
-  height: 100vh;
-  min-height: 680px;
+  height: auto;
+  min-height: 100svh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
+
+  @media screen and (min-width: 1024px) {
+    height: 100vh;
+    min-height: 680px;
+    align-items: center;
+  }
 }
 
 .hero-canvas {
@@ -27,7 +33,11 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 88px 24px 0;
+  padding: 88px 24px 80px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 88px 24px 0;
+  }
 }
 
 /* ── Two-column layout ── */
@@ -89,7 +99,7 @@
 
 .hero-heading {
   font-family: var(--font-head);
-  font-size: clamp(52px, 8vw, 104px);
+  font-size: clamp(38px, 11vw, 104px);
   font-weight: 900;
   line-height: 0.92;
   letter-spacing: -0.035em;
