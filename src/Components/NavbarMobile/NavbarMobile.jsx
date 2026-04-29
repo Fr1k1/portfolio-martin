@@ -5,11 +5,11 @@ import ScrollLink from "../ScrollLink/ScrollLink";
 import "./NavbarMobile.scss";
 
 const links = [
-  { label: "Projects",   to: "projects"   },
+  { label: "Projects", to: "projects" },
   { label: "Tech Stack", to: "tech-stack" },
-  { label: "Expertise",  to: "services"   },
+  { label: "Expertise", to: "services" },
   { label: "Experience", to: "experience" },
-  { label: "Contact",    to: "contact"    },
+  { label: "Contact", to: "contact" },
 ];
 
 const NavbarMobile = () => {
@@ -77,7 +77,7 @@ const NavbarMobile = () => {
                 <GithubLogo size={22} />
               </a>
               <a
-                href="https://www.linkedin.com/in/martin-fri%C5%A1%C4%8Di%C4%87-928bb2247/"
+                href="https://www.linkedin.com/in/martin-fri%C5%A1%C4%8Di%C4%87-6164ab202/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"

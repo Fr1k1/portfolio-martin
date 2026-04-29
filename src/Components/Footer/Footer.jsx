@@ -21,7 +21,7 @@ const Footer = () => {
             <GithubLogo size={20} />
           </a>
           <a
-            href="https://www.linkedin.com/in/martin-fri%C5%A1%C4%8Di%C4%87-928bb2247/"
+            href="https://www.linkedin.com/in/martin-fri%C5%A1%C4%8Di%C4%87-6164ab202/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
