@@ -1,9 +1,10 @@
+import { Icon } from "@iconify/react";
 import "./TechnologyCard.scss";
 
-const TechnologyCard = ({ logo, name, category }) => {
+const TechnologyCard = ({ icon, name, category }) => {
   return (
     <div className="tech-card glass">
-      <img src={logo} alt={name} className="tech-logo" />
+      <Icon icon={icon} className="tech-logo" />
       <span className="tech-name">{name}</span>
       {category && <span className="tech-category">{category}</span>}
     </div>

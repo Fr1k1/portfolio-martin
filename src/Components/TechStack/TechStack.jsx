@@ -34,7 +34,7 @@ const TechStack = () => {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              <TechnologyCard logo={tech.logo} name={tech.name} category={tech.category} />
+              <TechnologyCard icon={tech.icon} name={tech.name} category={tech.category} />
             </motion.div>
           ))}
         </div>
