@@ -5,8 +5,9 @@
   border: 1px solid var(--border);
   background: var(--surface);
   aspect-ratio: 16 / 10;
-  cursor: pointer;
-  transition: border-color 0.3s, transform 0.3s;
+  transition:
+    border-color 0.3s,
+    transform 0.3s;
 
   &:hover {
     border-color: var(--border-hover);
@@ -37,19 +38,26 @@
     height: 100%;
     object-fit: cover;
     filter: brightness(0.65);
-    transition: transform 0.45s ease, filter 0.45s ease;
+    transition:
+      transform 0.45s ease,
+      filter 0.45s ease;
   }
 
   .project-overlay {
     position: absolute;
     inset: 0;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background: linear-gradient(to top, rgba(9, 9, 11, 0.97) 55%, rgba(9, 9, 11, 0.55) 100%);
+    background: linear-gradient(
+      to top,
+      rgba(9, 9, 11, 0.97) 55%,
+      rgba(9, 9, 11, 0.55) 100%
+    );
     gap: 8px;
   }
 
@@ -101,7 +109,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 14px;
-    background: linear-gradient(to top, rgba(9, 9, 11, 0.88) 0%, transparent 100%);
+    background: linear-gradient(
+      to top,
+      rgba(9, 9, 11, 0.88) 0%,
+      transparent 100%
+    );
     transition: opacity 0.3s;
   }
 
@@ -121,7 +133,9 @@
     border: 1px solid var(--border);
     border-radius: 6px;
     color: var(--text-2);
-    transition: color 0.2s, border-color 0.2s;
+    transition:
+      color 0.2s,
+      border-color 0.2s;
 
     &:hover {
       color: var(--text);

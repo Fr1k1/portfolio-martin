@@ -14,7 +14,7 @@ const Contact = () => {
   const sendEmail = async (e) => {
     e.preventDefault();
     if (!mail || !description) {
-      toast.error("Please fill in your email and message");
+      toast.error("Please fill in your email and message", { id: "contact-validation" });
       return;
     }
     setSending(true);
